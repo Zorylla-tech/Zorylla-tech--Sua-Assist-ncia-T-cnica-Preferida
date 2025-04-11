@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zorylla Tech - A Assistência Perfeita Pra Você</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9ff;
+      color: #333;
+      transition: background-color 0.3s ease;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+      animation: fadeIn 1s ease-out;
+    }
+
+    header img {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      width: 80px;
+      opacity: 0.15;
+    }
+
+    nav {
+      background: #4b0082;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: gold;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+      animation: fadeInUp 1s ease-out;
+    }
+
+    section {
+      margin-bottom: 50px;
+      position: relative;
+    }
+
+    h2 {
+      color: #4b0082;
+      transition: color 0.3s ease;
+    }
+
+    .decor-left {
+      float: left;
+      margin-right: 20px;
+      width: 150px;
+      border-radius: 10px;
+    }
+
+    .decor-right {
+      float: right;
+      margin-left: 20px;
+      width: 150px;
+      border-radius: 10px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    footer {
+      background: #1e1e2f;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      border-radius: 50%;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .whatsapp-button img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .star-rating {
+      direction: rtl;
+      display: inline-block;
+      font-size: 1.5em;
+      color: gold;
+      margin-top: 20px;
+    }
+
+    .star-rating input {
+      display: none;
+    }
+
+    .star-rating label {
+      cursor: pointer;
+      color: #ddd;
+      transition: color 0.3s ease;
+    }
+
+    .star-rating input:checked ~ label {
+      color: gold;
+    }
+
+    .star-rating label:hover,
+    .star-rating label:hover ~ label {
+      color: #ffcc00;
+    }
+
+    /* Animação para efeito de fade-in */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Animação para efeito de fade-in para cima */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Zorylla Tech</h1>
+    <p>A Assistência Perfeita Pra Você</p>
+    <img src="https://cdn-icons-png.flaticon.com/512/2791/2791826.png" alt="Ícone de tecnologia">
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre nós</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
+    <a href="#avaliacao">Avaliação</a>
+  </nav>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre</h2>
+      <p>Bem-vindo ao site da Zorylla Tech! Entre em contato conosco via chat, SAC ou pelo Instagram: 
+        <a href="https://www.instagram.com/zoryllatech_assistencia/" target="_blank">@zoryllatech_assistencia</a>. 
+        Deixe sua avaliação ou crítica para nos ajudar a melhorar.</p>
+    </section>
+
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Troca de telas</li>
+        <li>Películas e acessórios em geral</li>
+        <li>Conserto de computadores</li>
+        <li>Formatação de computadores e celulares</li>
+        <li>Remoção de conta Google</li>
+        <li>Entre outros</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Email: assistenciatechzorylla@gmail.com</p>
+      <p>Telefone 1: (19) 98274-8378</p>
+      <p>Telefone 2: (19) 99170-4635</p>   
+
+      <!-- Formulário de Contato -->
+      <div class="form-container">
+        <h3>Envie-nos uma mensagem:</h3>
+        <form action="mailto:assistenciatechzorylla@gmail.com" method="POST" enctype="multipart/form-data">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <label for="mensagem">Mensagem:</label><br>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="avaliacao">
+      <h2>Avaliação</h2>
+      <div class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Zorylla Tech. Todos os direitos reservados.
+  </footer>
+
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/5519982748378" class="whatsapp-button" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
+
+</body>
+</html>
